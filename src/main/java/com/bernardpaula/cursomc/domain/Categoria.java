@@ -18,6 +18,9 @@ public class Categoria implements Serializable{
 	private Integer id; 
 	private String Nome;
 	
+	
+	
+	
 	public Categoria() {
 	}
 
