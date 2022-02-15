@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bernardpaula.cursomc.domain.Categoria;
-import com.bernardpaula.cursomc.repositories.CategoriaRepository;
 import com.bernardpaula.cursomc.services.CategoriaService;
 
 @RestController                                     //definiu como controlador rest
