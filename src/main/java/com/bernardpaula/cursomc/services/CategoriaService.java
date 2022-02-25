@@ -12,8 +12,8 @@ import com.bernardpaula.cursomc.services.exceptions.ObjectNotFoundException;
 @Service
 public class CategoriaService {
 	
-	@Autowired				//A dependência será instanciada automaticamente
-	private CategoriaRepository repo;      // dependência declarada      // Criei o obj repo
+	@Autowired			
+	private CategoriaRepository repo;      
 	
 	
 	
@@ -24,14 +24,11 @@ public class CategoriaService {
 				"Objeto não encontrado! Id:" + id + ", Tipo" + Categoria.class.getName()));
 	} 
 	
-	
-	/*  
-	public Categoria buscar(Integer Id) {
-		Optional<Categoria> obj = repo.findById(Id);
-		return obj.orElse(null);
-	} 
-	*/
-
+	public Categoria insert(Categoria obj) {
+		obj.setId(null);
+		return repo.save(obj);
+		
+	}
 	
 	
 	
