@@ -19,7 +19,7 @@ public class Categoria implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id; 
-	private String Nome;
+	private String nome;
 	
 
 	@ManyToMany(mappedBy="categorias")                   //Sinalizando que este mapeamento é o outro lado do mapeamento feito sobre "categoria
@@ -34,7 +34,7 @@ public class Categoria implements Serializable{
 	public Categoria(Integer id, String nome) {
 		super();
 		this.id = id;
-		Nome = nome;
+		this.nome = nome;
 	}
 
 	public Integer getId() {
@@ -46,11 +46,11 @@ public class Categoria implements Serializable{
 	}
 
 	public String getNome() {
-		return Nome;
+		return nome;
 	}
 
 	public void setNome(String nome) {
-		Nome = nome;
+		this.nome = nome;
 	}
 	
 	public List<Produto> getProdutos() {
