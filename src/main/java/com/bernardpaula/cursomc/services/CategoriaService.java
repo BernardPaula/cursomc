@@ -72,6 +72,7 @@ public class CategoriaService {
 		return new Categoria(objDto.getId(), objDto.getNome());
 	}
 	
+	
 
 	
 }
