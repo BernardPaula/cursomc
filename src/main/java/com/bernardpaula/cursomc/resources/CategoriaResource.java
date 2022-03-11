@@ -46,6 +46,7 @@ public class CategoriaResource {
 		return ResponseEntity.created(uri).build();
 	}
 	
+	
 
 	
 	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
