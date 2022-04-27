@@ -29,8 +29,6 @@ public class Pagamento implements Serializable {
 	@MapsId
 	private Pedido pedido;
 	
-
-	
 	
 	public Pagamento() {
 		

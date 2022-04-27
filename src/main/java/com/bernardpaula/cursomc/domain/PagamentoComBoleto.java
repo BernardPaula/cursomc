@@ -18,6 +18,7 @@ public class PagamentoComBoleto extends Pagamento {
 	private Date dataPagamento;
 	
 	
+
 	
 	public PagamentoComBoleto() {
 		
