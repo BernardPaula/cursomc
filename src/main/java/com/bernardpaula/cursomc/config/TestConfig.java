@@ -11,7 +11,7 @@ import com.bernardpaula.cursomc.services.DBService;
 
 @Configuration
 @Profile("test")
-public class testConfig {
+public class TestConfig {
 
 	@Autowired
 	private DBService dbservice;
