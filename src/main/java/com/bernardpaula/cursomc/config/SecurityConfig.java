@@ -20,7 +20,8 @@ public class SecurityConfig{
 	
 	public static final String[] PUBLIC_MATCHERS_GET = {
 			"/produtos/**",									//Somente Leitura
-			"/categorias/**"	
+			"/categorias/**",
+			"/clientes/**"
 	};
 	
 	@Bean
